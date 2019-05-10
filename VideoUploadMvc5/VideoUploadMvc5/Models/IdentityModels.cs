@@ -24,7 +24,7 @@ namespace VideoUploadMvc5.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        public DbSet<tblFile> tblFiles { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
